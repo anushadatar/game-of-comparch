@@ -16,12 +16,27 @@ from the top-row condition when following these rules.
 
 The image below shows this configuration iterating through many time steps. You can see that, even a one-dimensional system
 with an initial condition of one "on" block results in complex patterns over time! This particular pattern is used in the Wolfram
-programming language as a random-number generator.
+programming language as a large-integer random-number generator due to the chaotic patterns that it produces.
 
-![OneDimensionalRules](http://mathworld.wolfram.com/images/eps-gif/ElementaryCA30_1000.gif)
+![OneDimensionalExample](http://mathworld.wolfram.com/images/eps-gif/ElementaryCA30_1000.gif)
+
+
+## What is the Game of Life?
+![GameofLifeForFun](https://media.giphy.com/media/tXlpbXfu7e2Pu/giphy.gif)
 
 Cellular automata were conceived by John von Neumann in the 1950s and originally used by him to create self-replicating
 systems. The system created by him was fairly complicated, with each cell able to be in one of 29 different states. A much simpler
-cellular automata system was proposed by John Conway in 1970 known as his Game of Life, which is now one of the most well-known
-cellular automata systems ever created. The Game of Life was proven to be Turing-complete in 1982 and is the platform that we
-used to construct our ALU.
+cellular automata system was proposed by John Conway in 1970, known as his Game of Life, which is now one of the most well-known
+cellular automata systems ever created.
+
+The Game of Life is a 2-dimensional binary system with a Moore neighborhood. At each time step, the cells can take one of three actions:
+> 1. Survival: If the cell was on and either two or three neighbors were on, the cell remains on
+> 2. Birth: If the cell was off and exactly three of its neighbors were on, the cell turns on
+> 3. Death: If the cell was on and fewer than two or more than three neighbors were on, the cell turns off
+
+
+
+
+
+One of the main special properties of the Game of Life -- and the reason why it has been
+so computationally and philosophically interesting -- is
