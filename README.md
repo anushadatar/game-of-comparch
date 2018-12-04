@@ -37,9 +37,20 @@ The Game of Life is a 2-dimensional binary system with a Moore neighborhood. At 
 
 These simple rules give rise to many observable complex behaviors. A small community built itself around Conway's Game of Life, exploring the useful
 stable configurations that arise from certain starting conditions. Commonly used objects include *blinkers* that repeat their states after a certain
-number of time steps, *gliders* that travel across the grid, or *guns* that generate a stream of gliders.
+number of time steps, *gliders* that travel across the grid, or *guns* that generate a stream of gliders. Configurations can become incredibly complex,
+with large starting configurations resulting in stunning evolutions that almost seem to be alive.
 
-![Blinker](https://i0.wp.com/mathblog.com/wp-content/uploads/2011/05/game_toad.gif?ssl=1) ![Glider](https://i0.wp.com/mathblog.com/wp-content/uploads/2011/05/game_glider_fast.gif?ssl=1) ![Gun](https://aidanfray.files.wordpress.com/2016/03/gosperglidergun.gif?w=470)
+![GameofLifeForFun](https://media.giphy.com/media/uet5GfHpSA8mI/giphy.gif)
 
-One of the main special properties of the Game of Life -- and the reason why it has been
-so computationally and philosophically interesting -- is
+Philosopher Ilachinski, well known for his work in the field of cellular automata, says about this complexity
+ > Upon observing the seemingly unlimited complexity and variety of *Life's* evolving patterns, it becomes almost impossible to refrain from imagining,
+ > along with Conway, that, were the game really to be played on an infinite lattice, there must surely arise true living "life forms", perhaps themselves
+ > evolving into more complex, possibly sentient, "organisms".(Ilachinski 2001: 133)
+
+One of the main special properties of the Game of Life -- the one that allows these configurations to happen, and the reason why the Game has been
+so philosophically and computationally interesting -- is that it 
+
+
+Using these configurations we can build even
+more complex structures, structures that are even capable of simple computation. Gliders being generated and annihilating each other become a form of
+logic, and gates like *OR*, *AND*, and *XOR* can be created.
