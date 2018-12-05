@@ -7,7 +7,7 @@ Arithmetic Logic Unit (ALU) in John Conway's Game of Life.
 Cellular automata are spatially- and temporally-discrete systems that develop through a serious of time steps according to a set of rules.
 These rules are constrained in that a cell can only be affected by a neighboring cell (no action at a distance) and all the
 rules must be abstract and able to be described purely mathematically. Because of this, cellular automata are typically computational
-systems that can be shown to be Turing-complete.
+systems that can sometimes be shown to be Turing-complete.
 
 One of the simplest examples of cellular automata is a one-dimensional system with each cell assuming a state of either "on" (black)
 or "off" (white). Let's say it follows a set of rules like the ones shown below, where the second-row cell shows the evolution resulting
@@ -38,14 +38,17 @@ functions.
 However, despite this low-level mathematical description of these systems, our predictions of their behavior break down over large spatial and
 time scales.
 
+Many researchers believe that one of the special properties of the Game of Life -- the one that allows these configurations to happen, and the reason why the Game has been
+so philosophically and computationally interesting -- is that it lies near the *edge of chaos*. Or, the patterns it produces don't usually tend towards a completely stable state,
+nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called \lambda, which is the fraction of a cellular automata's
+rules that lead to the "life" of a cell.
+
 
 - - - -
 ## The Game of Life
 ![GameofLifeForFun](https://media.giphy.com/media/tXlpbXfu7e2Pu/giphy.gif)
 
-Cellular automata were conceived by John von Neumann in the 1950s and originally used by him to create self-replicating
-systems. The system created by him was fairly complicated, with each cell able to be in one of 29 different states. A much simpler
-cellular automata system was proposed by John Conway in 1970, known as his Game of Life, which is now one of the most well-known
+Proposed by John Conway in 1970, the *Game of Life* is now one of the most well-known
 cellular automata systems ever created.
 
 The Game of Life is a 2-dimensional binary system with a Moore neighborhood. At each time step, the cells can take one of three actions:
@@ -65,17 +68,23 @@ Philosopher Ilachinski, well known for his work in the field of cellular automat
  > along with Conway, that, were the game really to be played on an infinite lattice, there must surely arise true living "life forms", perhaps themselves
  > evolving into more complex, possibly sentient, "organisms".(Ilachinski 2001: 133)
 
-Many researchers believe that one of the special properties of the Game of Life -- the one that allows these configurations to happen, and the reason why the Game has been
-so philosophically and computationally interesting -- is that it lies near the *edge of chaos*. Or, the patterns it produces don't usually tend towards a completely stable state,
-nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called \lambda, which is the fraction of a cellular automata's
-rules that lead to the "life" of a cell.
-
-
-Using these configurations we can build even
-more complex structures, structures that are even capable of simple computation. Gliders being generated and annihilating each other become a form of
-logic, and gates like *OR*, *AND*, and *XOR* can be created.
+Using these configurations that have been invented (or found) by users of the Game of Life, we can create basic computational elements. With streams of gliders
+representing logical 1's and 0's, all the basic logic gates can be made, such as the *AND* gate shown below. By showing that these building blocks of computation
+can be made robustly and consistently, it seems as if any computation that can be performed by a traditional computer could theoretically be implemented in the
+Game of Life. In fact, *Life* has been proven to be Turing-complete --
 
 - - - -
 ## Our Project
-Our final project is composed of two main elements: a comprehensive introduction to cellular automata as tools for computation, and an implementation of an Arithmetical Logic
-Unit (ALU) in Conway's Game of Life that is capable of performing several different calculations on two 4-bit numbers. 
+Our final goal was to implement an Arithmetic Logic Unit (ALU) in the Game of Life that could perform several different operations on two 4-bit numbers. The first
+step in this process is the design of the ALU itself. A block diagram of what we aimed to build can be seen below.
+
+(block diagram of ALU)
+
+An implementation in the Game of Life necessitates that our design be at the gate level so we can translate it into Conway's system using logic gate building blocks
+that already exist.
+
+(details about y the alu is the way it is)
+
+To run our ALU we're using Golly, an open-source (tm) Game of Life simulator with lots of supports for modularity of designs and scripts that make undertakings
+of this complexity more straightforward than they should be. (we should like. host golly on our site so we have a page where you can run things on a grid. This
+  would like probably be too much work but if we have time.. it'd be Fancy.)
