@@ -40,7 +40,7 @@ Another interesting application of cellular automata being used to model a physi
 of Groningen used a Boltzmann-Lattice cellular automata to model the movement of nutrients in water, then used a separate set of rules to model the growth of
 coral as it interacts with these nutrients.
 
-![CORAL](https://gyazo.com/ff0e8594f8fbbf782cb8dc6216e31364)
+![CORAL](https://i.gyazo.com/ff0e8594f8fbbf782cb8dc6216e31364.png)
 
 
 More recently, cellular automata have also become a topic of philosophical discussion, as the complex emergent patterns in cellular automata raise questions about
