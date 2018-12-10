@@ -2,6 +2,8 @@
 An exploration of the use of cellular automata to perform complex computations, culminating in the implementation of an
 Arithmetic Logic Unit (ALU) in John Conway's Game of Life.
 
+> "I hate the *Game of Life*" - John Conway
+
 - - - -
 ## Introduction to Cellular Automata
 Cellular automata are spatially- and temporally-discrete systems that develop through a serious of time steps according to a set of rules.
@@ -34,7 +36,7 @@ in genetics, and visualizing fluid flows.
 The figure below shows a Lattice Gas cellular automata that is used to model fluid flows. Each arrow represents a discrete particle in the fluid, and
 large-scale behaviors of the fluid can be found by looking at the average behavior of large numbers of particles.
 
-![FluidFlows](https://gyazo.com/0769b8f604e874b7204b06622498c46a)
+![FluidFlows](https://i.gyazo.com/0769b8f604e874b7204b06622498c46a.png)
 
 Another interesting application of cellular automata being used to model a physical system is illustrated by the figures below -- students at the University
 of Groningen used a Boltzmann-Lattice cellular automata to model the movement of nutrients in water, then used a separate set of rules to model the growth of
@@ -42,9 +44,11 @@ coral as it interacts with these nutrients.
 
 ![CORAL](https://i.gyazo.com/ff0e8594f8fbbf782cb8dc6216e31364.png)
 
+Cellular automata have also become a topic of philosophical discussion, as the complex emergent patterns in cellular automata raise questions about
+emergent theories of the origins of life and a computational universe's relationship with determinism. The complex and unpredictable large-scale behaviors
+of many cellular automata can suggest life-like behaviors -- it's hard not to wonder if the universe could be, fundamentally, built on a digital platform similar
+to a cellular automata, as suggested by philosophers pursuing the subject.  
 
-More recently, cellular automata have also become a topic of philosophical discussion, as the complex emergent patterns in cellular automata raise questions about
-emergent theories of the origins of life and a computational universe's relationship with determinism.
 
 
 - - - -
@@ -59,7 +63,7 @@ time scales.
 Many researchers believe that one of the crucial properties of computationally-significant cellular automata --
 the one that allows standard, complex configurations to happen, and the reason why some automata have been
 so philosophically and computationally interesting -- is that they lies near the *edge of chaos*. Or, the patterns they produce don't usually tend towards a completely stable state,
-nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called \lambda, which is the fraction of a cellular automata's
+nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called $latex \lambda $, which is the fraction of a cellular automata's
 rules that lead to the "life" of a cell.
 
 
@@ -78,7 +82,7 @@ The Game of Life is a 2-dimensional binary system with a Moore neighborhood. At 
 These simple rules give rise to many observable complex behaviors. A small community built itself around Conway's Game of Life, exploring the useful
 stable configurations that arise from certain starting conditions. Commonly used objects include *blinkers* that repeat their states after a certain
 number of time steps, *gliders* that travel across the grid, or *guns* that generate a stream of gliders. Configurations can become incredibly complex,
-with large starting configurations resulting in stunning evolutions that almost seem to be alive.
+with large starting configurations resulting in stunning evolutions that almost seem to be alive, lending the Game of Life its name.
 
 ![GameofLifeForFun](https://media.giphy.com/media/uet5GfHpSA8mI/giphy.gif)
 
@@ -126,3 +130,4 @@ https://plato.stanford.edu/entries/cellular-automata/#CAPhilComp
 https://www.wolframscience.com/nks/notes-2-1--cellular-automaton-rules-as-formulas/
 http://eprints.uwe.ac.uk/22323/1/thesis.pdf
 https://annarchive.com/files/Winning%20Ways%20for%20Your%20Mathematical%20Plays%20V1.pdf
+http://www.calcifer.org/kenneth-christiansen/ComputerScience/2d-coral-growth-2.pdf
