@@ -63,7 +63,7 @@ time scales.
 Many researchers believe that one of the crucial properties of computationally-significant cellular automata --
 the one that allows standard, complex configurations to happen, and the reason why some automata have been
 so philosophically and computationally interesting -- is that they lies near the *edge of chaos*. Or, the patterns they produce don't usually tend towards a completely stable state,
-nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called $latex \lambda $, which is the fraction of a cellular automata's
+nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called &\lambda, which is the fraction of a cellular automata's
 rules that lead to the "life" of a cell.
 
 
