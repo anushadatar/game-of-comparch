@@ -23,8 +23,17 @@ as a large-integer random-number generator due to the aperiodic, chaotic behavio
 
 Cellular automata were conceived by John von Neumann in the 1950s and originally used by him to create self-replicating
 systems. The system created by him was fairly complicated, with each cell able to be in one of 29 different states. Historically,
-cellular automata have been useful platforms for modelling dynamic systems and for conceptually studying pattern formation. More
-recently they've also become topics of philosophical discussion, as the complex emergent patterns in cellular automata raise questions about
+cellular automata have been useful platforms for modelling dynamic systems and for conceptually studying pattern formation. Because cells in
+a cellular automata are only affected by their immediate neighbors, they're useful for modelling physical systems that are only directly affected
+by the space immediately adjacent to them. This tendency to only interact with neighbors also means that cellular automata can accurately model
+delays, like wave propagation. So, the most widespread practical use of cellular automata is modelling physical interactions over long periods of
+time that evolve according to pre-set rules. Some of the fields this has been applied in extensively include traffic modelling, studying patterns in
+genetics, and visualizing fluid flows.
+
+(I'd like to include a figure or something here that shows an implementation of something useful with a CA)
+
+
+More recently, cellular automata have also become a topic of philosophical discussion, as the complex emergent patterns in cellular automata raise questions about
 emergent theories of the origins of life and a computational universe's relationship with determinism.
 
 
@@ -33,13 +42,13 @@ emergent theories of the origins of life and a computational universe's relation
 
 One of the hallmarks of cellular automata is that they can be described abstractly. The rules that a system follows can be defined with
 functions.
-(how tho)
 
 However, despite this low-level mathematical description of these systems, our predictions of their behavior break down over large spatial and
 time scales.
 
-Many researchers believe that one of the special properties of the Game of Life -- the one that allows these configurations to happen, and the reason why the Game has been
-so philosophically and computationally interesting -- is that it lies near the *edge of chaos*. Or, the patterns it produces don't usually tend towards a completely stable state,
+Many researchers believe that one of the crucial properties of computationally-significant cellular automata --
+the one that allows standard, complex configurations to happen, and the reason why some automata have been
+so philosophically and computationally interesting -- is that they lies near the *edge of chaos*. Or, the patterns they produce don't usually tend towards a completely stable state,
 nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called \lambda, which is the fraction of a cellular automata's
 rules that lead to the "life" of a cell.
 
@@ -68,7 +77,7 @@ Philosopher Ilachinski, well known for his work in the field of cellular automat
  > along with Conway, that, were the game really to be played on an infinite lattice, there must surely arise true living "life forms", perhaps themselves
  > evolving into more complex, possibly sentient, "organisms".(Ilachinski 2001: 133)
 
-Using these configurations that have been invented (or found) by users of the Game of Life, we can create basic computational elements. With streams of gliders
+Using these configurations that have been discovered by users of the Game of Life, we can create basic computational elements. With streams of gliders
 representing logical 1's and 0's, all the basic logic gates can be made, such as the *AND* gate shown below. By showing that these building blocks of computation
 can be made robustly and consistently, it seems as if any computation that can be performed by a traditional computer could theoretically be implemented in the
 Game of Life. In fact, *Life* has been proven to be Turing-complete --
@@ -81,10 +90,29 @@ step in this process is the design of the ALU itself. A block diagram of what we
 (block diagram of ALU)
 
 An implementation in the Game of Life necessitates that our design be at the gate level so we can translate it into Conway's system using logic gate building blocks
-that already exist.
+that already exist. We've tried to use the simplest possible designs to facilitate building in the Game of Life.
 
 (details about y the alu is the way it is)
 
-To run our ALU we're using Golly, an open-source (tm) Game of Life simulator with lots of supports for modularity of designs and scripts that make undertakings
-of this complexity more straightforward than they should be. (we should like. host golly on our site so we have a page where you can run things on a grid. This
-  would like probably be too much work but if we have time.. it'd be Fancy.)
+To run our ALU we're using Golly, an open-source cellular automata simulator with lots of support for modularity of designs and scripts that make undertakings
+of this complexity a bit more straightforward. We've been in contact with a student called Nicolas who built an entire CPU using the Game of Life as a platform --
+he's shared his git repository with us, which is what we've been using as a source for the logic gates and basic blocks like *eaters* and *delays* in our design.
+
+
+- - - -
+## Results and Discussion
+
+What does our ALU look like? Did we succeed?
+
+- - - -
+## Conclusion
+
+Which problems are best suited to being solved with CA, and what emerging technologies are there that CA is a large part of?
+While this exercise isn't really significant in any engineering capacity, what cool things have we shown about CA?
+
+- - - -
+## Sources
+https://plato.stanford.edu/entries/cellular-automata/#CAPhilComp
+https://www.wolframscience.com/nks/notes-2-1--cellular-automaton-rules-as-formulas/
+http://eprints.uwe.ac.uk/22323/1/thesis.pdf
+https://annarchive.com/files/Winning%20Ways%20for%20Your%20Mathematical%20Plays%20V1.pdf
