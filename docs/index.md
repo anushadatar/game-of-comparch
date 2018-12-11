@@ -76,9 +76,9 @@ Game of Life. In fact, *Life* has been proven to be Turing-complete --
 - - - -
 ## Our Project
 Our final goal was to implement an Arithmetic Logic Unit (ALU) in the Game of Life that could perform several different operations on two 4-bit numbers. The first
-step in this process is the design of the ALU itself. A block diagram of what we aimed to build can be seen below.
+step in this process is the design of the ALU itself. We started with a design for a A block diagram of what we aimed to build can be seen below.
 
-(block diagram of ALU)
+![Complete ALU](ALU.jpg)
 
 An implementation in the Game of Life necessitates that our design be at the gate level so we can translate it into Conway's system using logic gate building blocks
 that already exist.
