@@ -1,2 +1,8 @@
 theme: jekyll-theme-minimal
 baseurl: /game-of-comparch
+
+defaults:
+  - scope:
+    path: "assets"
+    values:
+      image: true
