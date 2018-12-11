@@ -1,3 +1,8 @@
+---
+layout: default
+title: Mathematically Describing Cellular Automata
+---
+
 # Mathematically Describing Cellular Automata
 
 One of the hallmarks of cellular automata is that they can be described abstractly. The rules that a system follows can be defined with
