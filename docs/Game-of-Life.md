@@ -12,9 +12,9 @@ Conway's Game of Life is a well-known simple cellular automaton. Its behavior is
 * The transition *function* is based on a few constraints:
 >Survival: If the cell is alive and two or three of its neighbors are alive, the cell remains alive
 
->Birth: If the cell is dead and exactly three of its neighbors are alive, the cell becomes alive
+>>Birth: If the cell is dead and exactly three of its neighbors are alive, the cell becomes alive
 
->Death: If the cell is alive and fewer than two or more than three of its neighbors are alive, the cell dies
+>>Death: If the cell is alive and fewer than two or more than three of its neighbors are alive, the cell dies
 
 ## Patterns and Properties
 From these rules come a large number of patterns common to the game. These patterns include
@@ -39,5 +39,12 @@ logic gates. Below we can see examples of an AND, OR, and NOT gate, respectively
 
 This is incredibly significant -- knowing that we can create any logic function using
 the *Game of Life* leads us to the conclusion that we could create full computers using only the *Game of Life* as a platform.
+In fact, this has been proven. Conway and a few others proved shortly after the creation of the *Game of Life* that it is Turing-complete
+and can theoretically be used to compute anything that is computable. The first *Game of Life* Turing machine was created by Paul Rendell and can
+duplicate a pattern of ones that it is fed.
 
-Many researchers believe that one of the special properties of the Game of Life -- the one that allows these configurations to happen, and the reason why the Game has been so philosophically and computationally interesting -- is that it lies near the *edge of chaos*. Or, the patterns it produces don't usually tend towards a completely stable state, nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called \lambda, which is the fraction of a cellular automata's rules that lead to the "life" of a cell.
+![TuringMachine](https://archive.li/obdP1/163c8047c09eb685e9eea1c5db9e76ca7731dffa.gif)
+
+Further work has even shown that full CPUs can be constructed entirely using the *Game of Life*.
+
+Many researchers believe that one of the special properties of the Game of Life -- the one that allows these configurations to happen, and the reason why the Game has been so philosophically and computationally interesting -- is that it lies near the *edge of chaos*. Or, the patterns it produces don't usually tend towards a completely stable state, nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called \lambda, which is the fraction of a cellular automata's rules that lead to the "life" of a cell -- the edge is defined to be at or around a \lambda value of 0.5. Many of the cellular automata that have been shown to be Turing-complete, including the *Game of life*, have \lambda values that are close to the edge value.

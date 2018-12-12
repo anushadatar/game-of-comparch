@@ -11,7 +11,7 @@ Arithmetic Logic Unit (ALU) in John Conway's Game of Life.
 Cellular automata are spatially- and temporally-discrete systems that develop through a serious of time steps according to a set of rules.
 These rules are constrained in that a cell can only be affected by a neighboring cell (no action at a distance) and all the
 rules must be abstract and able to be described purely mathematically. Because of this, cellular automata are typically computational
-systems that can sometimes be shown to be Turing complete.
+systems that can sometimes be shown to be Turing-complete.
 
 One of the simplest examples of cellular automata is a one-dimensional system with each cell assuming a state of either "on" (black)
 or "off" (white). Let's say it follows a set of rules like the ones shown below, where the second-row cell shows the evolution resulting
@@ -26,9 +26,27 @@ as a large-integer random-number generator due to the aperiodic, chaotic behavio
 ![OneDimensionalExample](http://mathworld.wolfram.com/images/eps-gif/ElementaryCA30_1000.gif)
 
 Cellular automata were conceived by John von Neumann in the 1950s and originally used by him to create self-replicating
-systems. The system created by him was fairly complicated, with each cell able to be in one of 29 different states. Historically,
-cellular automata have been useful platforms for modelling dynamic systems and for conceptually studying pattern formation. More
-recently they've also become topics of philosophical discussion, as the complex emergent patterns in cellular automata raise questions about
+systems. The system created by him was fairly complicated, with each cell able to be in one of 29 different states -- since then
+simpler cellular automata have been explored as tools to solve other problems that are not as well served by traditional computing platforms.
+Historically, cellular automata have been particularly useful in modelling, specifically in dynamic physical systems and to visualize complex
+pattern evolutions. Because cells in a cellular automata are only affected by their immediate neighbors, they're useful for modelling physical systems that are only directly affected
+by the space immediately adjacent to them. This tendency to only interact with neighbors also means that cellular automata can accurately model
+delays that are more difficult to take into account in purely mathematical descriptions, like wave propagation through space. Some other applications
+that show cellular automata's use in modelling physical interactions over long periods of time include its uses in traffic modelling, studying patterns
+in genetics, and visualizing fluid flows.
+
+The figure below shows a Lattice Gas cellular automata that is used to model fluid flows. Each arrow represents a discrete particle in the fluid, and
+large-scale behaviors of the fluid can be found by looking at the average behavior of large numbers of particles.
+
+![FluidFlows](https://i.gyazo.com/0769b8f604e874b7204b06622498c46a.png)
+
+Another interesting application of cellular automata being used to model a physical system is illustrated by the figures below -- students at the University
+of Groningen used a Boltzmann-Lattice cellular automata to model the movement of nutrients in water, then used a separate set of rules to model the growth of
+coral as it interacts with these nutrients.
+
+![CORAL](https://i.gyazo.com/ff0e8594f8fbbf782cb8dc6216e31364.png)
+
+Cellular automata have also become a topic of philosophical discussion, as the complex emergent patterns in cellular automata raise questions about
 emergent theories of the origins of life and a computational universe's relationship with determinism.
 
 
@@ -56,9 +74,17 @@ Philosopher Ilachinski, well known for his work in the field of cellular automat
  > along with Conway, that, were the game really to be played on an infinite lattice, there must surely arise true living "life forms", perhaps themselves
  > evolving into more complex, possibly sentient, "organisms".(Ilachinski 2001: 133)
 
-Using these configurations that have been invented (or found) by users of the Game of Life, we can create basic computational elements. With streams of gliders
-representing logical 1's and 0's, all the basic logic gates can be made, such as the *AND* gate shown below. By showing that these building blocks of computation
+Using the pattern configurations that have been discovered by users of the Game of Life, we can create basic computational elements. With streams of gliders
+representing logical 1's and 0's, all the basic logic gates can be made, such as the *AND* gate shown below.
+
+![AND](https://camo.githubusercontent.com/5190f70598d5e917797dc64ab5713165946cb3de/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f336f39624f5464505377337147315a396f642f67697068792e676966)
+
+By showing that these building blocks of computation
 can be made robustly and consistently, it seems as if any computation that can be performed by a traditional computer could theoretically be implemented in the
-Game of Life. In fact, *Life* has been proven to be Turing-complete --
+Game of Life. In fact, *Life* has been proven to be Turing-complete, and Paul Rendell made it definitive by creating the first Turing machine ever constructed in the
+*Game of Life*.
+
+While not particularly practically significant, the work that has been done with the *Game of Life* to show that a cellular automata can be computationally powerful in
+both a non-traditional and, unexpectedly, traditional sense has been important in... 
 
 - - - -
