@@ -10,10 +10,10 @@ One of the hallmarks of cellular automata is that they can be described abstract
 
 ## Mathematical Models of Cellular Automata
 The state of a cellular automaton at some point can be defined by:
-* **Z** : The *lattice*, or the grid the game is conducted upon. In the case of the game of life, this would refer to t
-* **S** : The set of *state variables* for each cell.
-* **N** : The finite *neighborhood*, or cells related to some observed cell.
-* **F** : The transition *function* associated with the given rule.
+* *Z*s : The *lattice*, or the grid the game is conducted upon. In the case of the game of life, this would refer to t
+* *S* : The set of *state variables* for each cell.
+* *N* : The finite *neighborhood*, or cells related to some observed cell.
+* *F* : The transition *function* associated with the given rule.
 The tuple *(Z, S, N, F)* defines the state and behavior of a given automaton based on these parameters. At each timestep increment, the states of the cells change based on the transition function.
 
 ## Neighborhoods and Stability
