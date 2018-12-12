@@ -11,7 +11,9 @@ Conway's Game of Life is a well-known simple cellular automaton. Its behavior is
 * The *neighborhood* of the cell is the eight cells around it.
 * The transition *function* is based on a few constraints:
 >Survival: If the cell is alive and two or three of its neighbors are alive, the cell remains alive
+
 >Birth: If the cell is dead and exactly three of its neighbors are alive, the cell becomes alive
+
 >Death: If the cell is alive and fewer than two or more than three of its neighbors are alive, the cell dies
 
 ## Patterns and Properties
@@ -26,11 +28,14 @@ From these rules come a large number of patterns common to the game. These patte
 ![Gun](https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif)
 
 Small structures can be combined to form larger and more computationally interesting structures. The most obvious example of this is the creation of
-logic gates. Below we can see examples of an AND, OR, and NOT gate.
+logic gates. Below we can see examples of an AND, OR, and NOT gate, respectively.
 
-AND                        |  OR                       |  NOT
-:-------------------------:|:-------------------------:|:-------------------------:
-![AND](https://camo.githubusercontent.com/5190f70598d5e917797dc64ab5713165946cb3de/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f336f39624f5464505377337147315a396f642f67697068792e676966)  |  ![OR](https://camo.githubusercontent.com/110216dd8ac588867bd1d7f687f932d740d5d673/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f3535764565714c52626f31734e7330456b462f67697068792e676966) | ![NOT](https://camo.githubusercontent.com/6729e9a4329c342be81355dc4b3fa430623c7b4d/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f524d6466756d324a4954556e3941717543702f67697068792e676966)
+![AND](https://camo.githubusercontent.com/5190f70598d5e917797dc64ab5713165946cb3de/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f336f39624f5464505377337147315a396f642f67697068792e676966)
+
+![OR](https://camo.githubusercontent.com/110216dd8ac588867bd1d7f687f932d740d5d673/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f3535764565714c52626f31734e7330456b462f67697068792e676966)
+
+![NOT](https://camo.githubusercontent.com/6729e9a4329c342be81355dc4b3fa430623c7b4d/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f524d6466756d324a4954556e3941717543702f67697068792e676966)
+
 
 This is incredibly significant -- knowing that we can create any logic function using
 the *Game of Life* leads us to the conclusion that we could create full computers using only the *Game of Life* as a platform.
