@@ -5,6 +5,7 @@ title: Cellular Automata For Computing
 # Cellular Automata For Computing
 - - - -
 
+## Performance and Efficiency
 Cellular automata were conceived by John von Neumann in the 1950s and originally used by him to create self-replicating
 systems. The system created by him was fairly complicated, with each cell able to be in one of 29 different states -- since then
 simpler cellular automata have been explored as tools to solve other problems that are not as well served by traditional computing platforms.
@@ -31,4 +32,9 @@ Evolution of DNA can also be modelled by a cellular automata and used to predict
 
 ![DNA](https://i.gyazo.com/5bba4afc4ecf0722d077e4ad24c807d3.png)
 
-The simple rules and discrete nature of cellular automata make them better suited to these kinds of calculations than describing them with sets of equations and solving them using a traditional computing method.
+The simple rules and discrete nature of cellular automata make them better suited to these kinds of calculations than describing them with sets of equations and solving them using a traditional computing method. 
+
+At the same time, continuous operations that require direct synchrony (such as traditional logic gates) are more inefficient when implemented using cellular automata because their causal nature does not lend itself to parallelism as nicely. 
+
+## Area
+Comparing the differences in area between cellular automata based frameworks and traditional computing platforms is difficult because the systems are objectively in different state spaces: automata reside on a two-dimensional grid and each glider, which serves as the primary vehicle for data and energy transmission, has four discrete states that must be in phase with connections. Meanwhile, traditional computing platforms use tightly-packed transistors as the medium to move electrons, which have two discrete states. As a result, both systems present unique advantages and drawbacks in particular use cases. 
