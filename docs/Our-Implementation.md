@@ -10,15 +10,15 @@ title: Our Implementation
  In real-life systems, information is transmitted across computers through digital signals: a combination of high and low voltages pread over time. This digital stream of 1s and 0s is emulated in the game of life by the presence or absence of glider in a glider stream.
  
  The following image depicts a glider stream that is transmitting a stream of 1s.
- ![stream of gliders](images/wire_1_small.PNG)
+ ![stream of gliders](images/wire_1_small.png)
  
  A lack of gliders would indicate a transmission of all 0s.
- ![stream of 0s](images/wire_0_small.PNG)
+ ![stream of 0s](images/wire_0_small.png)
 
 Due to the large propogation delay of logic gates relative to the amount of gliders that pass through them, each digital signal would have to contain on the order of 50 or more gliders to prevent any hazards.
 
 In order to continually generate signals to pass through our hardware, we used the Gosper Glider Gun in combination with an eater block to control whether or not we were producing a glider stream. 
-![gosper gun](https://en.wikipedia.org/wiki/File:Gosper_glider_gun_with_grid.gif)
+![gosper gun](https://upload.wikimedia.org/wikipedia/en/5/5d/Gosper_glider_gun_with_grid.gif)
 
 ## Logic Gates
 The following logic gate structures were obtained from [nicolasloizeau](https://github.com/nicolasloizeau/gol-computer).
@@ -37,3 +37,8 @@ The following logic gate structures were obtained from [nicolasloizeau](https://
 
 #### NOT
 ![not](https://media.giphy.com/media/RMdfum2JITUn9AquCp/giphy.gif)
+
+## Hazards
+As a glider moves throuhgout a plane, it oscillates between 4 phases. Structures that interact with gliders are very picky and will only couple properly if the glider stream comes into contact with structure at the right phase. Unfortunately, most actions that affect a stream will set the stream out of phase. To compensate for shifting phases, strategic delay blocks need to be added to keep traces in phase. 
+
+If any traces need to overlap, they must be shifted out of phase or else the gliders can cause chaos.
