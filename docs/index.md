@@ -4,11 +4,15 @@ title: Overview
 ---
 # Game of CompArch: Cellular Automata and Computing
 An exploration of the use of cellular automata to perform complex computations, culminating in the implementation of an
-Arithmetic Logic Unit (ALU) in John Conway's *Game of Life*.
+Arithmetic Logic Unit (ALU) in John Conway's *Game of Life*. 
+
 - - - - 
 Cellular automata generally have computing applications in very specific problem spaces, such as modelling discrete physical systems and visualizing complex patterns evolving over time. However, some cellular automata have been proven to be Turing-complete and theoretically able to create Universal Turing machines, showing that cellular automata may even have uses in computing in a more traditional sense. In this project we've compiled a write-up and presentation that serve as an introduction to cellular automata and their uses, as well as constructing our own computational unit in a well-known cellular automata, the *Game of Life*. This demonstrates that analogues to more familiar computational elements can be effectively made in a simple cellular automata, though these systems are not tailored to these methods of computation.
 
 - - - -
+
+Here is a link to a [Slide Deck](https://docs.google.com/presentation/d/1c7IqBz8jZY-fgArBW16a5GkVbkPinY1Dw_asdooEMbg/edit?usp=sharing) with visualizations and information about our project and implementation. 
+
 ## Introduction to Cellular Automata
 Cellular automata are spatially- and temporally-discrete systems that develop through a serious of time steps according to a set of rules.
 These rules are constrained in that a cell can only be affected by a neighboring cell (no action at a distance) and all the
