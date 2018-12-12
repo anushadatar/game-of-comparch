@@ -53,7 +53,11 @@ The reason this is the case becomes evident by proof through counterexample. If 
 
 Then, we could construct an input tape that duplicates the input tape and then runs in the halting detection machine using one copy of the input as *q* and one copy of the input as *i*. If the halting program outputs *False*, the machine halts. If the halting program outputs *True*, the machine goes into an infinite loop (does not halt).
 
-If this program is run in a Turing Machine, then it would need to continue running to return False, and it would need to stop running to return True - this is inherently self-contradictory, and proves that for any universal Turing machine there is at least one case where it cannot solve the Halting problem. The undecidability of the halting problem embodies the unpredictability of all possible cases with cellular automata : while there are certainly characterizable patterns, the behavior is unpredictable.
+If this program is run in a Turing Machine, then it would need to continue running to return False, and it would need to stop running to return True - this is inherently self-contradictory, and proves that for any universal Turing machine there is at least one case where it cannot solve the Halting problem. 
+
+More colloquially, a program that can run infinitely would need to halt to report that it can run infinitely, so it can never report this.
+
+The undecidability of the halting problem embodies the unpredictability of all possible cases with cellular automata : while there are certainly characterizable patterns, the behavior is unpredictable.
 
 ### The Edge of Chaos
 
