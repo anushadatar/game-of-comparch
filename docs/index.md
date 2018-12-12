@@ -65,7 +65,4 @@ can be made robustly and consistently, it seems as if any computation that can b
 Game of Life. In fact, *Life* has been proven to be Turing-complete, and Paul Rendell made it definitive by creating the first Turing machine ever constructed in the
 *Game of Life*.
 
-While not particularly practically significant, the work that has been done with the *Game of Life* to show that a cellular automata can be computationally powerful in
-both a non-traditional and, unexpectedly, traditional sense has been important in challenging and forming our definitions of what can be considered a computer. 
-
 - - - -
