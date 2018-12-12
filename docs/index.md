@@ -62,3 +62,7 @@ can be made robustly and consistently, it seems as if any computation that can b
 Game of Life. In fact, *Life* has been proven to be Turing-complete --
 
 - - - -
+## Our Project
+After exploring concepts associated with cellular automata and Conway's Game of Life, we aimed to create an Arithmetic Logic Unit (ALU) using this framework.
+
+TODO Updates here.
