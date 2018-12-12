@@ -47,5 +47,3 @@ duplicate a pattern of ones that it is fed.
 ![TuringMachine](https://archive.li/obdP1/163c8047c09eb685e9eea1c5db9e76ca7731dffa.gif)
 
 Further work has even shown that full CPUs can be constructed entirely using the *Game of Life*.
-
-Many researchers believe that one of the special properties of the Game of Life -- the one that allows these configurations to happen, and the reason why the Game has been so philosophically and computationally interesting -- is that it lies near the *edge of chaos*. Or, the patterns it produces don't usually tend towards a completely stable state, nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called \lambda, which is the fraction of a cellular automata's rules that lead to the "life" of a cell -- the edge is defined to be at or around a \lambda value of 0.5. Many of the cellular automata that have been shown to be Turing-complete, including the *Game of life*, have \lambda values that are close to the edge value.

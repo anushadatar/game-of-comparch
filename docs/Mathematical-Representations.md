@@ -7,7 +7,7 @@ title: Mathematically Describing Cellular Automata
 
 One of the hallmarks of cellular automata is that they can be described abstractly. The rules that a system follows can be defined with relatively straightforward state-based models and functions.
 
-The state of a cellular automaton at some point can be defined by: 
+The state of a cellular automaton at some point can be defined by:
 * **Z** : The *lattice*, or the grid the game is conducted upon. In the case of the game of life, this would refer to t
 * **S** : The set of *state variables* for each cell.
 * **N** : The finite *neighborhood*, or cells related to some observed cell.
@@ -27,10 +27,12 @@ In general, the local transition function maps an lattice of cells with certain 
 
 
 ## Emergent Behavior
-### Reversibility 
+### Reversibility
 
 ### Halting
 Cell
 At its core, the halting problem is the quesiton of whether a machine, when given an arbitrary program and input, can determine whether or not this program will finish running or run continuously.
 
 ### The Edge of Chaos
+
+Many researchers believe that one of the special properties of the Game of Life -- the one that allows these configurations to happen, and the reason why the Game has been so philosophically and computationally interesting -- is that it lies near the *edge of chaos*. Or, the patterns it produces don't usually tend towards a completely stable state, nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called \lambda, which is the fraction of a cellular automata's rules that lead to the "life" of a cell -- the edge is defined to be at or around a \lambda value of 0.5. Many of the cellular automata that have been shown to be Turing-complete, including the *Game of life*, have \lambda values that are close to the edge value.
