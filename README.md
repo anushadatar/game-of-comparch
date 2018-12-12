@@ -24,7 +24,7 @@ as a large-integer random-number generator due to the aperiodic, chaotic behavio
 ![OneDimensionalExample](http://mathworld.wolfram.com/images/eps-gif/ElementaryCA30_1000.gif)
 
 Cellular automata were conceived by John von Neumann in the 1950s and originally used by him to create self-replicating
-systems. The system created by him was fairly complicated, with each cell able to be in one of 29 different states -- since then more,
+systems. The system created by him was fairly complicated, with each cell able to be in one of 29 different states -- since then
 simpler cellular automata have been explored as tools to solve other problems that are not as well served by traditional computing platforms.
 Historically, cellular automata have been particularly useful in modelling, specifically in dynamic physical systems and to visualize complex
 pattern evolutions. Because cells in a cellular automata are only affected by their immediate neighbors, they're useful for modelling physical systems that are only directly affected
@@ -58,13 +58,15 @@ One of the hallmarks of cellular automata is that they can be described abstract
 functions.
 
 However, despite this low-level mathematical description of these systems, our predictions of their behavior break down over large spatial and
-time scales.
+time scales. A computationally significant measure for this unpredictability is the Halting problem. Frequently used to describe Turing machines,
+the Halting problem is
 
 Many researchers believe that one of the crucial properties of computationally-significant cellular automata --
 the one that allows standard, complex configurations to happen, and the reason why some automata have been
 so philosophically and computationally interesting -- is that they lies near the *edge of chaos*. Or, the patterns they produce don't usually tend towards a completely stable state,
 nor do their results appear to be completely random. The near-ness to the edge of chaos is quantified by a parameter called &\lambda, which is the fraction of a cellular automata's
-rules that lead to the "life" of a cell.
+rules that lead to the "life" of a cell. Research has shown that cellular automata with high computational potential tend to lie near critical &\lambda values, and when evolving
+cellular automata specifically to be computationally useful the consequent rules also tend to converge on these same &\lambda values (give sources here).
 
 
 - - - -
@@ -131,3 +133,4 @@ https://www.wolframscience.com/nks/notes-2-1--cellular-automaton-rules-as-formul
 http://eprints.uwe.ac.uk/22323/1/thesis.pdf
 https://annarchive.com/files/Winning%20Ways%20for%20Your%20Mathematical%20Plays%20V1.pdf
 http://www.calcifer.org/kenneth-christiansen/ComputerScience/2d-coral-growth-2.pdf
+http://www.cs.cornell.edu/courses/cs4820/2012sp/handouts/turingm.pdf
