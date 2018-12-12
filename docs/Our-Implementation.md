@@ -63,7 +63,7 @@ golly FILENAME.mc
 
 By first building each individual component (add/sub module, mux, individual logic gates) we were able to use a bitwise architecture to simplify the building of our final product.
 
-Below is a video of our adder. We also created a multiplexer (granted, we did not complete wiring the traces) and a large set of utility files, including  combinations of gates, joints, and trifurcation/quadfurcation joints.
+Below is a capture of the adder we built. We also created a multiplexer (granted, we did not complete wiring the traces) and a large set of utility files, including  combinations of gates, joints, and trifurcation/quadfurcation joints.
 
 ![adder](https://media.giphy.com/media/fxIcB5FKMyZQEVQglI/giphy.gif)
 
