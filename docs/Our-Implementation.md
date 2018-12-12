@@ -12,7 +12,7 @@ However, to complete our exploration of the ALU, we created a complete gate-leve
 ![ALU](images/ALU.jpg)
 
  In order to create the structures of a computer in the game of life, we have to implement physical structures to produce, relay, and modify information. Due to the underlying logic gate structure of computers, we could build almost any structure using a combination of logic gates, traces to connect gates, and "voltage sources" to drive the inputs for the logic gates.
- 
+
 ## Analogues of Voltage Sources and Wiring
  In real-life systems, information is transmitted across computers through digital signals: a combination of high and low voltages read over time. This digital stream of 1s and 0s is emulated in the *Game of Life* by the presence or absence of gliders in a glider stream.
 
@@ -48,7 +48,7 @@ The following logic gate structures were obtained from [nicolasloizeau](https://
 ![not](https://media.giphy.com/media/RMdfum2JITUn9AquCp/giphy.gif)
 
 ## Hazards
-As a glider moves through the lattice, it oscillates between 4 phases. Structures that interact with gliders are very picky and will only couple properly if the glider stream comes into contact with structure at the right phase. Unfortunately, most actions that affect a stream will set the stream out of phase. To compensate for shifting phases, strategic delay blocks need to be added to keep traces in phase. 
+As a glider moves through the lattice, it oscillates between 4 phases. Structures that interact with gliders are very picky and will only couple properly if the glider stream comes into contact with structure at the right phase. Unfortunately, most actions that affect a stream will set the stream out of phase. To compensate for shifting phases, strategic delay blocks need to be added to keep traces in phase.
 
 If any traces need to overlap, they must be shifted out of phase or else the gliders will destructively interfere and propagate false 0s.
 
@@ -68,7 +68,7 @@ Below is a capture of the adder we built. We also created a multiplexer (granted
 ![adder](https://media.giphy.com/media/fxIcB5FKMyZQEVQglI/giphy.gif)
 
 
-To continue this work, we would want to continue translating our block diagram to gates and traces in Golly. We could also more thoroughly explore scripting frameworks for determining inputs and for automating some of the tedious and error-prone effort of traving arrays.
+To continue this work, we would want to continue translating our block diagram to gates and traces in Golly. We could also more thoroughly explore scripting frameworks for determining inputs and for automating some of the tedious and error-prone effort of tracing arrays.
 
 
 ## Reflection
