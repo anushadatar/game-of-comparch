@@ -1,8 +1,4 @@
 theme: jekyll-theme-minimal
+title: Game of Comparch
+description: An exploration and implementation of cellular automata and computing for Olin College Computer Architecture FA18.
 baseurl: /game-of-comparch
-
-defaults:
-  - scope:
-    path: "assets"
-    values:
-      image: true

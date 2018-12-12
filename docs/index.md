@@ -1,3 +1,7 @@
+---
+layout: "default"
+title: Overview
+---
 # Game of CompArch: Cellular Automata and Computing
 An exploration of the use of cellular automata to perform complex computations, culminating in the implementation of an
 Arithmetic Logic Unit (ALU) in John Conway's Game of Life.
@@ -7,7 +11,7 @@ Arithmetic Logic Unit (ALU) in John Conway's Game of Life.
 Cellular automata are spatially- and temporally-discrete systems that develop through a serious of time steps according to a set of rules.
 These rules are constrained in that a cell can only be affected by a neighboring cell (no action at a distance) and all the
 rules must be abstract and able to be described purely mathematically. Because of this, cellular automata are typically computational
-systems that can sometimes be shown to be Turing-complete.
+systems that can sometimes be shown to be Turing complete.
 
 One of the simplest examples of cellular automata is a one-dimensional system with each cell assuming a state of either "on" (black)
 or "off" (white). Let's say it follows a set of rules like the ones shown below, where the second-row cell shows the evolution resulting
@@ -58,17 +62,3 @@ can be made robustly and consistently, it seems as if any computation that can b
 Game of Life. In fact, *Life* has been proven to be Turing-complete --
 
 - - - -
-## Our Project
-Our final goal was to implement an Arithmetic Logic Unit (ALU) in the Game of Life that could perform several different operations on two 4-bit numbers. The first
-step in this process is the design of the ALU itself. We started with a design for a A block diagram of what we aimed to build can be seen below.
-
-![Complete ALU](ALU.jpg)
-
-An implementation in the Game of Life necessitates that our design be at the gate level so we can translate it into Conway's system using logic gate building blocks
-that already exist.
-
-(details about y the alu is the way it is)
-
-To run our ALU we're using Golly, an open-source (tm) Game of Life simulator with lots of supports for modularity of designs and scripts that make undertakings
-of this complexity more straightforward than they should be. (we should like. host golly on our site so we have a page where you can run things on a grid. This
-  would like probably be too much work but if we have time.. it'd be Fancy.)
