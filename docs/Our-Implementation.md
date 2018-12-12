@@ -27,6 +27,7 @@ However, to complete our exploration of the ALU, we created a complete gate-leve
 Due to the large propagation delay of logic gates relative to the amount of gliders that pass through them, each digital signal would have to contain on the order of 50 or more gliders to prevent any hazards.
 
 In order to continually generate signals to pass through our hardware, we used the Gosper Glider Gun in combination with an eater block to control whether or not we were producing a glider stream.
+
 ![gosper gun](https://upload.wikimedia.org/wikipedia/en/5/5d/Gosper_glider_gun_with_grid.gif)
 
 ## Logic Gates
