@@ -3,9 +3,14 @@ layout: "default"
 title: Our Implementation
 ---
 # Our Implementation
-
+ 
+ In order to create the structures of a compute in the game of life, we have to implement physical structures to produce, relay, and modify information. Due to the underlying logic gate structure of computers, we could build almost any structure using a combination of logic gates, traces to connect gates, and voltage sources to drive the inputs for the logic gates.
+ 
+ ## Voltage Sources and Wiring
+ In real-life systems, information is transmitted across computers through the presence or abscence 
+ 
+ Information is transmitted in stored by the prescence or abscence of glider streams. The individual glider 
 ![gipfhy](https://media.giphy.com/media/3o9bOTdPSw3qG1Z9od/giphy.gif)
-
 
 ![xor](https://media.giphy.com/media/iMCj4EgPkQOvetoPuV/giphy.gif)
 
