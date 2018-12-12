@@ -8,7 +8,8 @@ title: Our Implementation
 The construction of our computational element, an Arithmetic Logic Unit, started with the creation of a block diagram. While we initially wanted our ALU to be able to perform all of the operations required by the MIPS architecture, we quickly pared this down to fit within the time constraints of the project. We settled on creating the frameworks associated with the ALU: addition, subtraction, logic gates, and a multiplexer.
 
 However, to complete our exploration of the ALU, we created a complete gate-level diagram of a four-bit ALU - if we were to implement the entire system in the Game of Life, we would need to implement each piece individually. Because of the difficulty of tracing lines in the Game of Life, we did not complete all of the wiring necessary for complete ALU operation.
-![ALU][images/ALU.jpg]
+
+![ALU](images/ALU.jpg)
 
  In order to create the structures of a computer in the game of life, we have to implement physical structures to produce, relay, and modify information. Due to the underlying logic gate structure of computers, we could build almost any structure using a combination of logic gates, traces to connect gates, and "voltage sources" to drive the inputs for the logic gates.
  
@@ -53,15 +54,18 @@ If any traces need to overlap, they must be shifted out of phase or else the gli
 
 ## Construction and Final Result
 To run the *Game of Life* we used the open-source application Golly. The scripts included with Golly that placed the cells were written with quad trees that were incomprehensible to us, so we placed and routed our ALU by hand (this process certainly built character). To run scripts in Golly, install and launch the application:
-"""
+
+```
 sudo apt-get install golly
 
 golly FILENAME.mc
-"""
+```
 
 By first building each individual component (add/sub module, mux, individual logic gates) we were able to use a bitwise architecture to simplify the building of our final product.
 
 Below is a video of our adder. We also created a multiplexer (granted, we did not complete wiring the traces) and a large set of utility files, including  combinations of gates, joints, and trifurcation/quadfurcation joints.
+
+![adder](https://media.giphy.com/media/fxIcB5FKMyZQEVQglI/giphy.gif)
 
 
 To continue this work, we would want to continue translating our block diagram to gates and traces in Golly. We could also more thoroughly explore scripting frameworks for determining inputs and for automating some of the tedious and error-prone effort of traving arrays.
