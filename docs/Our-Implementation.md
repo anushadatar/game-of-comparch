@@ -12,3 +12,5 @@ title: Our Implementation
 ![nor](https://media.giphy.com/media/182tC6OM2QTsCUuKrl/giphy.gif)
 
 ![or](https://media.giphy.com/media/55vEeqLRbo1sNs0EkF/giphy.gif)
+
+![not](https://media.giphy.com/media/RMdfum2JITUn9AquCp/giphy.gif)
