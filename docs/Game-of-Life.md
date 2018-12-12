@@ -10,11 +10,12 @@ Conway's Game of Life is a well-known simple cellular automaton. Its behavior is
 * The *state* of each cell is whether the color of the cell is black or white (also commonly referred to as "dead" or "alive", respectively).
 * The *neighborhood* of the cell is the eight cells around it.
 * The transition *function* is based on a few constraints:
+
 >Survival: If the cell is alive and two or three of its neighbors are alive, the cell remains alive
 
->>Birth: If the cell is dead and exactly three of its neighbors are alive, the cell becomes alive
+>Birth: If the cell is dead and exactly three of its neighbors are alive, the cell becomes alive
 
->>Death: If the cell is alive and fewer than two or more than three of its neighbors are alive, the cell dies
+>Death: If the cell is alive and fewer than two or more than three of its neighbors are alive, the cell dies
 
 ## Patterns and Properties
 From these rules come a large number of patterns common to the game. These patterns include
