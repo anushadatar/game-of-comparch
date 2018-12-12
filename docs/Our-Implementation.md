@@ -10,10 +10,10 @@ title: Our Implementation
  In real-life systems, information is transmitted across computers through digital signals: a combination of high and low voltages pread over time. This digital stream of 1s and 0s is emulated in the game of life by the presence or absence of glider in a glider stream.
  
  The following image depicts a glider stream that is transmitting a stream of 1s.
- ![stream of gliders](images/wire_1.PNG)
+ ![stream of gliders](images/wire_1_small.PNG)
  
  A lack of gliders would indicate a transmission of all 0s.
- ![stream of 0s](images/wire_0.PNG)
+ ![stream of 0s](images/wire_0_small.PNG)
 
 Due to the large propogation delay of logic gates relative to the amount of gliders that pass through them, each digital signal would have to contain on the order of 50 or more gliders to prevent any hazards.
 

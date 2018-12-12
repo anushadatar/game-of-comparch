@@ -11,7 +11,7 @@ Arithmetic Logic Unit (ALU) in John Conway's Game of Life.
 Cellular automata are spatially- and temporally-discrete systems that develop through a serious of time steps according to a set of rules.
 These rules are constrained in that a cell can only be affected by a neighboring cell (no action at a distance) and all the
 rules must be abstract and able to be described purely mathematically. Because of this, cellular automata are typically computational
-systems that can sometimes be shown to be Turing complete.
+systems that can sometimes be shown to be Turing-complete.
 
 One of the simplest examples of cellular automata is a one-dimensional system with each cell assuming a state of either "on" (black)
 or "off" (white). Let's say it follows a set of rules like the ones shown below, where the second-row cell shows the evolution resulting
@@ -25,10 +25,7 @@ as a large-integer random-number generator due to the aperiodic, chaotic behavio
 
 ![OneDimensionalExample](http://mathworld.wolfram.com/images/eps-gif/ElementaryCA30_1000.gif)
 
-Cellular automata were conceived by John von Neumann in the 1950s and originally used by him to create self-replicating
-systems. The system created by him was fairly complicated, with each cell able to be in one of 29 different states. Historically,
-cellular automata have been useful platforms for modelling dynamic systems and for conceptually studying pattern formation. More
-recently they've also become topics of philosophical discussion, as the complex emergent patterns in cellular automata raise questions about
+Cellular automata have also become a topic of philosophical discussion, as the complex emergent patterns in cellular automata raise questions about
 emergent theories of the origins of life and a computational universe's relationship with determinism.
 
 
@@ -56,9 +53,17 @@ Philosopher Ilachinski, well known for his work in the field of cellular automat
  > along with Conway, that, were the game really to be played on an infinite lattice, there must surely arise true living "life forms", perhaps themselves
  > evolving into more complex, possibly sentient, "organisms".(Ilachinski 2001: 133)
 
-Using these configurations that have been invented (or found) by users of the Game of Life, we can create basic computational elements. With streams of gliders
-representing logical 1's and 0's, all the basic logic gates can be made, such as the *AND* gate shown below. By showing that these building blocks of computation
+Using the pattern configurations that have been discovered by users of the Game of Life, we can create basic computational elements. With streams of gliders
+representing logical 1's and 0's, all the basic logic gates can be made, such as the *AND* gate shown below.
+
+![AND](https://camo.githubusercontent.com/5190f70598d5e917797dc64ab5713165946cb3de/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f336f39624f5464505377337147315a396f642f67697068792e676966)
+
+By showing that these building blocks of computation
 can be made robustly and consistently, it seems as if any computation that can be performed by a traditional computer could theoretically be implemented in the
-Game of Life. In fact, *Life* has been proven to be Turing-complete --
+Game of Life. In fact, *Life* has been proven to be Turing-complete, and Paul Rendell made it definitive by creating the first Turing machine ever constructed in the
+*Game of Life*.
+
+While not particularly practically significant, the work that has been done with the *Game of Life* to show that a cellular automata can be computationally powerful in
+both a non-traditional and, unexpectedly, traditional sense has been important in...
 
 - - - -
